@@ -16,9 +16,6 @@ def main():
         
         average = sum(marks) / len(marks)
         
-        print(f"\nStudent Name: {name}")
-        print(f"Average Mark: {average:.2f}")
-        
         if average >= 75:
             grade = "A"
         elif average >= 60:
@@ -28,10 +25,11 @@ def main():
         else:
             grade = "Fail"
         
-        if grade == "Fail":
-            print(f"Result: {grade}")
-        else:
-            print(f"Grade: {grade}")
+        print("-" * 30)
+        print(f"Name    : {name}")
+        print(f"Average : {average:.1f}")
+        print(f"Grade   : {grade}")
+        print("-" * 30)
 
 if __name__ == "__main__":
     main()
